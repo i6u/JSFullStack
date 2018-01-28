@@ -2,6 +2,7 @@
 **征战 JavaScript 全栈**
 
 * 巩固 JavaScript 基础
+* HTML 5
 * CSS
 * ECMAScript 6
 * Node
