@@ -5,6 +5,7 @@
 * ECMA 6
 * HTML 5
 * CSS
+* SASS
 * ECMAScript 6
 * Node
 * React、React-Native
