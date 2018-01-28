@@ -1,23 +1,50 @@
 'use strict';
 
-function string2int(s) {
-    return s.split("").map(function (x) {
-        return +x;
-    }).reduce(function (x, y) {
-        return x * 10 + y;
-    })
+function test(resolve, reject) {
+    var timeOut = Math.random() * 2;
+    console.log('set timeout to: ' + timeOut + ' seconds.');
+    setTimeout(function () {
+        if (timeOut < 1) {
+            console.log('call resolve()...');
+            resolve('200 OK');
+        }
+        else {
+            console.log('call reject()...');
+            reject('timeout in ' + timeOut + ' seconds.');
+        }
+    }, timeOut * 1000);
 }
 
-// 测试:
-if (string2int('0') === 0 && string2int('12345') === 12345 && string2int('12300') === 12300) {
-    if (string2int.toString().indexOf('parseInt') !== -1) {
-        console.log('请勿使用parseInt()!');
-    } else if (string2int.toString().indexOf('Number') !== -1) {
-        console.log('请勿使用Number()!');
-    } else {
-        console.log('测试通过!');
-    }
+
+var success = function (result) {
+    console.log('成功：' + result)
 }
-else {
-    console.log('测试失败!');
+
+var error = function (result) {
+    console.log('失败：' + result)
 }
+
+// test(success, error);
+
+// new Promise(test).then(success).catch(error);
+
+
+new Promise(function (resolve, reject) {
+    console.log('start new Promise...');
+    var timeOut = Math.random() * 2;
+    console.log('set timeout to: ' + timeOut + ' seconds.');
+    setTimeout(function () {
+        if (timeOut < 1) {
+            console.log('call resolve()...');
+            resolve('200 OK');
+        }
+        else {
+            console.log('call reject()...');
+            reject('timeout in ' + timeOut + ' seconds.');
+        }
+    }, timeOut * 1000);
+}).then(function (r) {
+    console.log('Done: ' + r);
+}).catch(function (reason) {
+    console.log('Failed: ' + reason);
+});
