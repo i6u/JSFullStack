@@ -1,7 +1,7 @@
 # JSFullStack
 **征战 JavaScript 全栈**
 
-* 巩固 JavaScript 基础
+* JavaScript 基础查漏补缺
 * ECMA 6
 * HTML 5
 * CSS
