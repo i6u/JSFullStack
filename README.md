@@ -10,3 +10,7 @@
 * Node
 * React、React-Native
 * Vue
+
+## 异步处理
+callback -> Promise -> generator -> async/await  
+[Promise, generator, async與ES6](http://huli.logdown.com/posts/292655-javascript-promise-generator-async-es6)
