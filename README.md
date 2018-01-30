@@ -13,4 +13,5 @@
 
 ## 异步处理
 callback -> Promise -> generator -> async/await  
-[Promise, generator, async與ES6](http://huli.logdown.com/posts/292655-javascript-promise-generator-async-es6)
+[Promise, generator, async與ES6](http://huli.logdown.com/posts/292655-javascript-promise-generator-async-es6)  
+[深入理解 ES7 的 async/await](https://juejin.im/entry/58523b908e450a006c4d0c5b)
