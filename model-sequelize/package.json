@@ -1,0 +1,26 @@
+{
+  "name": "model-sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "private": true,
+  "scripts": {
+    "start": "node --use_strict app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint *.js",
+    "lint-html": "eslint **/*.js -f html -o ./reports/lint-results.html",
+    "lint-fix": "eslint --fix *.js"
+  },
+  "keywords": [],
+  "author": "witt",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "3.24.1",
+    "mysql": "2.11.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}
