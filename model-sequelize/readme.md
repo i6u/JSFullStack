@@ -12,7 +12,9 @@
 **app.js** : 程式主入口，引入 model.js 模块
 
 ```Start
-Strat 
+
+Strat
+
  ⬇ app.js
 
  ⬇ model.js ➡ Pet.js & User.js
