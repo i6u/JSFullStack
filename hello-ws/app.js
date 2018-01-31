@@ -39,6 +39,8 @@ ws.on('message', function (message) {
     if (count > 3) {
         ws.send('Goodbye!');
         ws.close();
+        
+
     } else {
         setTimeout(() => {
             ws.send(`Hello, I'm Mr No.${count}!`);
